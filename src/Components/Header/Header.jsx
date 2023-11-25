@@ -3,7 +3,7 @@ import { FaCog, FaBell, FaSignOutAlt } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 p-4">
+    <header className="bg-gray-800 text-white p-4">
       <div className="flex items-center justify-between">
         <div className="text-white">Logo</div>
         <div className="flex items-center space-x-4">
