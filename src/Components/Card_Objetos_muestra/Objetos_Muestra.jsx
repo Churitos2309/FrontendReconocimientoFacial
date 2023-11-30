@@ -2,7 +2,7 @@ import React from 'react';
 
 const ObjetosMuestra = ({Imagen, Descripcion, TipoObjeto}) => {
     return (
-        <div className='flex flex-col gap-5 items-center'>
+        <div className='flex flex-col gap-5 items-center drop-shadow-md'>
             <h3>
                 {TipoObjeto}
             </h3>

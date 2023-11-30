@@ -1,12 +1,16 @@
 import React from "react";
-import ObjetosMuestra from "../Components/Card_Objetos_muestra/Objetos_Muestra";
+import "./MuestraObjetos.css"
+import ObjetosMuestra from "../../../../../Components/Card_Objetos_muestra/Objetos_Muestra";
 
 const MuestraObjetosRegistrados = () => {
   return (
-    <div className="flex justify-center items-center">
-      <div className="flex flex-col gap-7 items-center border-2 border-black p-4 rounded-md">
+    <div className="Contenedor_padre">
+    <div className="Almacenador">
+      <h1 className="Titulo"><b>Objetos Registrados</b></h1>
+
+      <div className="flex flex-col gap-7 items-center border-2 p-6 rounded-md shadow-2xl ">
         <div className="  ">
-          <h1>Registro de Objetos</h1>
+          <h1 className="text-xl">Registro de Objetos</h1>
         </div>
         <div>
           <ObjetosMuestra
@@ -19,6 +23,8 @@ const MuestraObjetosRegistrados = () => {
         </div>
       </div>
     </div>
+    </div>
+    
   );
 };
 
