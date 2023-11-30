@@ -5,9 +5,9 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Home from './pages/Home';
-import RegistroForm from './pages/register';
-import LoginForm from './pages/login';
 import MuestraObjetosRegistrados from './pages/MuestraObjetosRegistrados';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 
 const App = () => {
   return (
@@ -20,9 +20,9 @@ const App = () => {
         </div> */}
         <Routes>
         <Route path='/' element={<Home />} />
-          <Route path='/Login' element={<LoginForm />} />
-          <Route path='/Register' element={<RegistroForm />} />
-          <Route path='/otraopcion' element={<MuestraObjetosRegistrados/>} />
+          <Route path='/Login' element={<LoginPage />} />
+          <Route path='/Register' element={<RegisterPage />} />
+          <Route path='/objetosregistrados' element={<MuestraObjetosRegistrados/>} />
         </Routes>
         
       </div>
