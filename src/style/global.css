@@ -1,4 +1,8 @@
 body {
+    background-image: url('../image/FondoForm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   
     margin: 0;
     background-color: #EBF0F2;
@@ -12,3 +16,10 @@ body {
   header {
     margin-bottom: 0.2rem; /* Puedes ajustar este valor según tus necesidades */
   }
+  .body {
+    background-image: url('../image/FondoForm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
