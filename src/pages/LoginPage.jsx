@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 function LoginPage() {
  return (
@@ -15,12 +16,15 @@ function LoginPage() {
        </div>
        <div>
          <input type="checkbox" name="remember" id="remember" />
-         <label className="text-sm font-light" htmlFor="remember">Recordarme</label>
+         <label className="text-sm font-light " htmlFor="remember"> Recordarme</label>
        </div>
+       <Link to='/'>
        <button className="w-full px-10 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-500 hover:drop-shadow-md duration-300 ease-in" type="submit">
          Ingresar
        </button>
-       <p className="text-right"><a className="text-blue-600 text-sm font-light hover:underline" href="https://www.kindacode.com">¿Olvido la Contraseña?</a></p>
+       </Link>
+       <p className="text-right"><Link className="text-blue-600 text-sm font-light hover:underline" to='/olvidarcontrasenia'>¿Perdiste tu contraseña?</Link></p>
+       <p className="text-right">¿No tienes cuenta? <Link className="text-blue-600 text-sm font-light hover:underline" to='/register'>Registrate</Link></p>
      </form>
    </div>
  );
