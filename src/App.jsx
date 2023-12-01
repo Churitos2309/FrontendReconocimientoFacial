@@ -3,6 +3,8 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import MuestraCardAprendiz from './pages/MuestraCardAprendiz';     /*IMPORTO Page MuestraCardAprendiz.jsx*/
+
 // import Roles from "./pages/Roles";
 
 
@@ -30,6 +32,10 @@ const App = () => {
           {/* Rutas Principales */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/Register" element={<RegisterPage />} />
+          <Route path="/objetosregistrados" element={<MuestraObjetosRegistrados />} />
+          <Route path="CardAprendiz" element={<MuestraCardAprendiz/>} />       {/* DOY RUTA Page MuestraCardAprendiz */}
+
+          
           {/* <Route path="/Roles" element={<Roles />} /> */}
 
           {/* Rutas Roles */}
