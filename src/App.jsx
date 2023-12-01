@@ -10,6 +10,8 @@ import RolGuardiaSeguridad from "./pages/Home/Rol_Guardia_Seguridad/Rol_Guardia_
 import RolAdministrativo from "./pages/Home/Rol_Administrativo/RolAdministrativo";
 import RolInstructor from "./pages/Home/Rol_Instructor/RolInstructor";
 import RolAprendiz from "./pages/Home/Rol_Aprendiz/RolAprendiz";
+import Header  from './Components/Header/Header'
+import Sidebar from './Components/Sidebar/Sidebar'
 
 const App = () => {
   const navigate = useNavigate();
@@ -26,7 +28,7 @@ const App = () => {
         
         <Routes>
           {/* Rutas Principales */}
-          <Route path="/" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/Register" element={<RegisterPage />} />
           {/* <Route path="/Roles" element={<Roles />} /> */}
 
