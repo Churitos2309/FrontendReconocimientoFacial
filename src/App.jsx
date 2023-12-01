@@ -1,12 +1,15 @@
 import React from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
-import Header from "./components/Header/Header";
-import Sidebar from "./Components/Sidebar/Sidebar";
-import Home from "./pages/Home";
-import MuestraObjetosRegistrados from "./pages/Home/Rol_Guardia_Seguridad/Pages_Guardia/Muestra_Objetos/MuestraObjetosRegistrados";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+// import Roles from "./pages/Roles";
+
+
+import RolGuardiaSeguridad from "./pages/Home/Rol_Guardia_Seguridad/Rol_Guardia_Seguridad";
+import RolAdministrativo from "./pages/Home/Rol_Administrativo/RolAdministrativo";
+import RolInstructor from "./pages/Home/Rol_Instructor/RolInstructor";
+import RolAprendiz from "./pages/Home/Rol_Aprendiz/RolAprendiz";
 
 const App = () => {
   const navigate = useNavigate();
@@ -22,15 +25,22 @@ const App = () => {
         {mostrarSidebarHeader () && <Sidebar />}
         
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Login" element={<LoginPage />} />
+          {/* Rutas Principales */}
+          <Route path="/" element={<LoginPage />} />
           <Route path="/Register" element={<RegisterPage />} />
-          <Route path="/objetosregistrados" element={<MuestraObjetosRegistrados />}
-          />
+          {/* <Route path="/Roles" element={<Roles />} /> */}
+
+          {/* Rutas Roles */}
+          <Route path="/Aprendiz" element={<RolAprendiz />} />
+          <Route path="/Instructor" element={<RolInstructor />} />
+          <Route path="/Administrativo" element={<RolAdministrativo  />} />
+          <Route path="/Vigilante" element={<RolGuardiaSeguridad />} />
+
         </Routes>
       </div>
     </div>
   );
 };
+
 
 export default App;
