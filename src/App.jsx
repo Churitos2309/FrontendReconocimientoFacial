@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
@@ -12,9 +12,18 @@ import RolInstructor from "./pages/Home/Rol_Instructor/RolInstructor";
 import RolAprendiz from "./pages/Home/Rol_Aprendiz/RolAprendiz";
 
 const App = () => {
+  const navigate = useNavigate();
+
+  const mostrarSidebarHeader = () => {
+    const rutasOcultas = ['/login','/register'];
+    return !rutasOcultas.includes(window.location.pathname);
+  }
   return (
     <div className="flex flex-col h-screen overflow-hidden">
+      {mostrarSidebarHeader () && <Header />}
       <div className="flex min-h-screen">
+        {mostrarSidebarHeader () && <Sidebar />}
+        
         <Routes>
           {/* Rutas Principales */}
           <Route path="/" element={<LoginPage />} />
