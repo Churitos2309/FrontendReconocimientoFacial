@@ -3,8 +3,8 @@ import React from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
 // Importación de componentes:
-import Header from "./components/Header/Header";
-import Sidebar from "./Components/Sidebar/Sidebar";
+import Header from "./Components/Header/Header";
+import Sidebar from "./Components/Sidebar/Sidebar"
 
 // Importación de páginas:
 import Home from "./pages/Home";
@@ -14,6 +14,8 @@ import RegisterPage from "./pages/RegisterPage";
 import Historial from "./pages/GuardiaDeSeguridad/Historial";
 import ReportesAdministrador from "./pages/Administrador/ReportesAdministrador";
 import ReportesInstructor from "./pages/Instructor/ReportesInstructor";
+import RolInstructor from "./pages/Home/Rol_Instructor/RolInstructor"
+
 
 const App = () => {
   const navigate = useNavigate();
@@ -34,6 +36,7 @@ const App = () => {
           <Route path="/Register" element={<RegisterPage />} />
           <Route path="/objetosregistrados" element={<MuestraObjetosRegistrados />} />
           <Route path="/historial" element={<Historial />} />
+          <Route path="/RolInstructor" element={<RolInstructor/>} />
           <Route path="/reportesAdministrador" element={<ReportesAdministrador />} />
           <Route path="/reportesInstructor" element={<ReportesInstructor />} />
         </Routes>

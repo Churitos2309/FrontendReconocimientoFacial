@@ -18,7 +18,7 @@ const Sidebar = () => {
         </Link>
 
 
-        <Link to='/otraopcion'>
+        <Link to='/RolInstructor'>
         <div className="flex items-center space-x-4">
           <FaTh className="text-white" />
           <span className="text-white">Otra opción</span>
