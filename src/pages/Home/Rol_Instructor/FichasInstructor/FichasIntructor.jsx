@@ -6,7 +6,7 @@ const FichasIntructor = () => {
   return (
     <>
       <div className="contenedorF">
-        <Link to=''><button className="botonF">2669742</button></Link>
+        <Link to='/SelectFicha'><button className="botonF">2669742</button></Link>
         <Link to=''><button className="botonF">2669742</button></Link>
         <Link to=''><button className="botonF">2669458</button></Link>
         <Link to=''><button className="botonF">2659722</button></Link>

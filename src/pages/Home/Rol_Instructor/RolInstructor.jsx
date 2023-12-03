@@ -4,6 +4,7 @@ import NameProgram from "./FichasInstructor/NameProgram";
 import "./FichasInstructor/FichasIntructor";
 
 
+
 const RolInstructor = () => {
   return (
     <>
@@ -14,9 +15,6 @@ const RolInstructor = () => {
           <FichasIntructor />
         </div>
       </div>
-
-      
-
     </>
   );
 };

@@ -15,6 +15,7 @@ import Historial from "./pages/GuardiaDeSeguridad/Historial";
 import ReportesAdministrador from "./pages/Administrador/ReportesAdministrador";
 import ReportesInstructor from "./pages/Instructor/ReportesInstructor";
 import RolInstructor from "./pages/Home/Rol_Instructor/RolInstructor"
+import SelectFicha from "./pages/Home/Rol_Instructor/SelectFicha/SelectFicha";
 
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
           <Route path="/RolInstructor" element={<RolInstructor/>} />
           <Route path="/reportesAdministrador" element={<ReportesAdministrador />} />
           <Route path="/reportesInstructor" element={<ReportesInstructor />} />
+          <Route path="/SelectFicha" element={<SelectFicha/>} />
         </Routes>
       </div>
     </div>

@@ -79,3 +79,11 @@ text-shadow: 15px 15px 15px #00324d;
   align-items: center;
   height: 90%;
 }
+
+/* /////////formularioFicha////// */
+
+.overf{
+  overflow-y: auto;
+  height: 70vh;
+
+}
