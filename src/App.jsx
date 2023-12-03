@@ -18,6 +18,7 @@ import RolInstructor from "./pages/Home/Rol_Instructor/RolInstructor"
 import SelectFicha from "./pages/Home/Rol_Instructor/SelectFicha/SelectFicha";
 
 
+
 const App = () => {
   const navigate = useNavigate();
 

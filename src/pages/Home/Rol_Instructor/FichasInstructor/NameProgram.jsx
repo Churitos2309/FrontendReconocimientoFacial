@@ -4,7 +4,7 @@ import './FichasIntructor'
 const NameProgram = () => {
   return (
     <>
-        <div className='nameprogram'>
+        <div className='nameprogram '>
           <p>ADSO</p>
         </div>
     

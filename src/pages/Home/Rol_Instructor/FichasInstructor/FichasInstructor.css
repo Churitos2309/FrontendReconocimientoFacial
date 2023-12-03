@@ -50,7 +50,7 @@
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #ffffff;
+  color: rgb(255, 252, 252);
 }
 
 .nameprogram:hover{
@@ -80,10 +80,16 @@ text-shadow: 15px 15px 15px #00324d;
   height: 90%;
 }
 
-/* /////////formularioFicha////// */
+/* /////////tablaFicha////// */
 
 .overf{
   overflow-y: auto;
+  overflow-x: hidden;
   height: 70vh;
 
+}
+
+.custom-checkbox input[type="checkbox"]{
+  transform: scale(1.5);
+  background-color: green;
 }
