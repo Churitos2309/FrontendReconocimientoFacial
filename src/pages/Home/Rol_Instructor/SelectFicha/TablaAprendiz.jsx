@@ -3,22 +3,22 @@ import "../FichasInstructor/FichasIntructor";
 const TablaAprendiz = () => {
   return (
     <div className="w-full ">
-      <table className="  ml-60 mt-12  shadow-2xl sm:rounded-lg text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <table className="  sm:ml-3 lg:ml-24 min-[1041px]:ml-32 sm:mt-17 sm:h-10 ml-60 mt-12  shadow-2xl sm:rounded-lg text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead className="  text-base font-medium bg-sky-200 text-gray-800 bg-gray-200 light:bg-gray-700 light:text-gray-400">
           <tr>
-            <th scope="col" className="px-1 mx-5 py-3 inline-block ">
+            <th scope="col" className="px-1 mx-5 py-3 inline-block sm:w-1">
               No.
             </th>
-            <th scope="col" className="px-1 mx-5 py-3 inline-block ">
+            <th scope="col" className="px-1 mx-5 py-3 inline-block sm:ml-12">
               Aprendiz
             </th>
-            <th scope="col" className="px-1 ml-32 py-3 inline-block">
+            <th scope="col" className="px-1 ml-32 py-3 inline-block sm:ml-15 sm:mr-0">
               N°. Documento
             </th>
-            <th scope="col" className="px-1 ml-6 py-3 inline-block">
+            <th scope="col" className="px-1 ml-6 py-3 inline-block sm:ml-7">
               Ingreso
             </th>
-            <th scope="col" className="px-1 ml-6 py-3 inline-block">
+            <th scope="col" className="px-1 ml-6 py-3 inline-block sm:ml-1">
               Ingreso/aula
             </th>
           </tr>
@@ -30,7 +30,245 @@ const TablaAprendiz = () => {
               scope="row"
               className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
             >
-              10
+              18
+            </td>
+            <td
+              scope="row"
+              className=" px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              Jesús Paladinez
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              CC. 1002634856
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              7:05 a.m
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              <td className="px-4 text-center custom-checkbox">
+                <input type="checkbox" />
+              </td>
+            </td>
+          </tr>
+          <tr className=" bg-white border-b light:bg-gray-800 light:border-gray-700 hover:bg-gray-100 light:hover:bg-gray-600 hover:border-solid border-2 hover:border-green-400">
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              17
+            </td>
+            <td
+              scope="row"
+              className=" px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              Jesús Paladinez
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              CC. 1002634856
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              7:05 a.m
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              <td className="px-4 text-center custom-checkbox">
+                <input type="checkbox" />
+              </td>
+            </td>
+          </tr>
+          <tr className=" bg-white border-b light:bg-gray-800 light:border-gray-700 hover:bg-gray-100 light:hover:bg-gray-600 hover:border-solid border-2 hover:border-green-400">
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              16
+            </td>
+            <td
+              scope="row"
+              className=" px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              Jesús Paladinez
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              CC. 1002634856
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              7:05 a.m
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              <td className="px-4 text-center custom-checkbox">
+                <input type="checkbox" />
+              </td>
+            </td>
+          </tr>
+          <tr className=" bg-white border-b light:bg-gray-800 light:border-gray-700 hover:bg-gray-100 light:hover:bg-gray-600 hover:border-solid border-2 hover:border-green-400">
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              15
+            </td>
+            <td
+              scope="row"
+              className=" px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              Jesús Paladinez
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              CC. 1002634856
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              7:05 a.m
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              <td className="px-4 text-center custom-checkbox">
+                <input type="checkbox" />
+              </td>
+            </td>
+          </tr>
+          <tr className=" bg-white border-b light:bg-gray-800 light:border-gray-700 hover:bg-gray-100 light:hover:bg-gray-600 hover:border-solid border-2 hover:border-green-400">
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              14
+            </td>
+            <td
+              scope="row"
+              className=" px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              Jesús Paladinez
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              CC. 1002634856
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              7:05 a.m
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              <td className="px-4 text-center custom-checkbox">
+                <input type="checkbox" />
+              </td>
+            </td>
+          </tr>
+          <tr className=" bg-white border-b light:bg-gray-800 light:border-gray-700 hover:bg-gray-100 light:hover:bg-gray-600 hover:border-solid border-2 hover:border-green-400">
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              13
+            </td>
+            <td
+              scope="row"
+              className=" px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              Jesús Paladinez
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              CC. 1002634856
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              7:05 a.m
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              <td className="px-4 text-center custom-checkbox">
+                <input type="checkbox" />
+              </td>
+            </td>
+          </tr>
+          <tr className=" bg-white border-b light:bg-gray-800 light:border-gray-700 hover:bg-gray-100 light:hover:bg-gray-600 hover:border-solid border-2 hover:border-green-400">
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              12
+            </td>
+            <td
+              scope="row"
+              className=" px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              Jesús Paladinez
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+            >
+              CC. 1002634856
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              7:05 a.m
+            </td>
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              <td className="px-4 text-center custom-checkbox">
+                <input type="checkbox" />
+              </td>
+            </td>
+          </tr>
+          <tr className=" bg-white border-b light:bg-gray-800 light:border-gray-700 hover:bg-gray-100 light:hover:bg-gray-600 hover:border-solid border-2 hover:border-green-400">
+            <td
+              scope="row"
+              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center"
+            >
+              11
             </td>
             <td
               scope="row"
