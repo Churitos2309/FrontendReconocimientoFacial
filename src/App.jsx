@@ -7,13 +7,14 @@ import Header from "./components/Header/Header";
 import Sidebar from "./Components/Sidebar/Sidebar";
 
 // Importación de páginas:
-import Home from "./pages/Home";
+import Inicio from "./pages/Inicio";
 import MuestraObjetosRegistrados from "./pages/Home/Rol_Guardia_Seguridad/Pages_Guardia/Muestra_Objetos/MuestraObjetosRegistrados";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import Historial from "./pages/GuardiaDeSeguridad/Historial";
 import ReportesAdministrador from "./pages/Administrador/ReportesAdministrador";
 import ReportesInstructor from "./pages/Instructor/ReportesInstructor";
+import RegistroObjetos from "./pages/Aprendiz/RegistroObjetos";
 
 const App = () => {
   const navigate = useNavigate();
@@ -29,13 +30,14 @@ const App = () => {
         {mostrarSidebarHeader() && <Sidebar />}
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Inicio />} />
           <Route path="/Login" element={<LoginPage />} />
           <Route path="/Register" element={<RegisterPage />} />
           <Route path="/objetosregistrados" element={<MuestraObjetosRegistrados />} />
           <Route path="/historial" element={<Historial />} />
           <Route path="/reportesAdministrador" element={<ReportesAdministrador />} />
           <Route path="/reportesInstructor" element={<ReportesInstructor />} />
+          <Route path="/registroObjetos" element={<RegistroObjetos />} />
         </Routes>
       </div>
     </div>
