@@ -2,7 +2,7 @@
 const Table = () => {
     return (
         <div>
-            <div className="w-full relative shadow-2xl sm:rounded-lg flex justify-center items-center mt-16 mx-32">
+            <div className="w-full relative shadow-2xl rounded-lg flex justify-center items-center mt-16 mx-24">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead className="text-base font-medium text-gray-800 bg-gray-200 light:bg-gray-700 light:text-gray-400">
                         <tr>
@@ -16,6 +16,9 @@ const Table = () => {
                                 Rol
                             </th>
                             <th scope="col" className="px-6 py-3 text-center">
+                                Estado
+                            </th>
+                            <th scope="col" className="px-6 py-3 text-center">
                                 Ingreso
                             </th>
                         </tr>
@@ -26,10 +29,15 @@ const Table = () => {
                                 10
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
-                                Jesús Paladinez
+                                Jesús Eduardo Paladinez Vargas
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
                                 Aprendiz
+                            </td>
+                            <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
+
+                                <button type="button" className="w-20 px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg">Activo</button>
+
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
                                 7:05 a.m
@@ -46,6 +54,11 @@ const Table = () => {
                                 Instructor
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
+
+                                <button type="button" className="w-20 px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg">Activo</button>
+
+                            </td>
+                            <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
                                 7:03 a.m
                             </td>
                         </tr>
@@ -54,10 +67,15 @@ const Table = () => {
                                 8
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
-                                Jonier Gómez
+                                Jonier Alexander Gómez Martinez
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
                                 No pertenece
+                            </td>
+                            <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
+
+                                <button type="button" className="px-3 py-2 text-xs font-medium text-center text-white bg-red-500 rounded-lg">Bloqueado</button>
+
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
                                 7:01 a.m
@@ -74,6 +92,11 @@ const Table = () => {
                                 Aprendiz
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
+
+                                <button type="button" className="w-20 px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg">Activo</button>
+
+                            </td>
+                            <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
                                 7:00 a.m
                             </td>
                         </tr>
@@ -82,10 +105,15 @@ const Table = () => {
                                 6
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
-                                Daniel Astaiza
+                                Daniel Camilo Astaiza Toro
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
                                 Aprendiz
+                            </td>
+                            <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
+
+                                <button type="button" className="w-20 px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg">Activo</button>
+
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
                                 6:59 a.m
@@ -102,6 +130,11 @@ const Table = () => {
                                 No pertenece
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
+
+                                <button type="button" className="px-3 py-2 text-xs font-medium text-center text-white bg-red-500 rounded-lg">Bloqueado</button>
+
+                            </td>
+                            <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
                                 6:58 a.m
                             </td>
                         </tr>
@@ -110,10 +143,15 @@ const Table = () => {
                                 4
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
-                                Franco Reina
+                                Franco Antonio Reina Argoty
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
                                 Instructor
+                            </td>
+                            <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
+
+                                <button type="button" className="w-20 px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg">Activo</button>
+
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
                                 6:57 a.m
@@ -124,10 +162,15 @@ const Table = () => {
                                 3
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
-                                Juan Ochoa
+                                Juan Eduardo Ochoa Cordoba
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
                                 Aprendiz
+                            </td>
+                            <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
+
+                                <button type="button" className="w-20 px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg">Activo</button>
+
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
                                 6:56 a.m
@@ -138,10 +181,15 @@ const Table = () => {
                                 2
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
-                                Jorge Coral
+                                Jorge Andrés Coral
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
                                 Instructor
+                            </td>
+                            <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
+
+                                <button type="button" className="w-20 px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg">Activo</button>
+
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
                                 6:55 a.m
@@ -152,10 +200,15 @@ const Table = () => {
                                 1
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
-                                Alexis Ceron
+                                Nebar Alexis Ceron Santacruz
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left">
                                 Aprendiz
+                            </td>
+                            <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
+
+                                <button type="button" className="w-20 px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg">Activo</button>
+
                             </td>
                             <td scope="row" className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-center">
                                 6:54 a.m
