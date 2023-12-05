@@ -25,6 +25,14 @@ const Sidebar = () => {
         </div>
         </Link>
 
+        <Link to='/CardAprendiz'>                       {/* CREO LINK PARA COMPONENTE CardAprendiz.jsx  */}
+        <div className="flex items-center space-x-4">
+          <FaTh className="text-white" />
+          <span className="text-white">Carnet Aprendiz</span>
+        </div>
+        </Link>
+
+
         <Link to='registro'>
         <div className="flex items-center space-x-4">
           <FaAddressBook className="text-white" />
