@@ -1,0 +1,30 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.Opciones{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.mm{
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    padding: 4% 4% 10% 4% ;
+}
+
+.optionsabajo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 23%;
+    position: absolute;
+}
