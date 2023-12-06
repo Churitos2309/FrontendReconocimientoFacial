@@ -1,4 +1,4 @@
-// Importanción de dependencias:
+// Importación de dependencias:
 import React from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
@@ -8,6 +8,11 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 
 // Importación de páginas:
 import Inicio from "./pages/Inicio";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import MuestraCardAprendiz from "./pages/MuestraCardAprendiz";
+import MuestraObjetosRegistrados from "./pages/Home/Rol_Guardia_Seguridad/Pages_Guardia/Muestra_Objetos/MuestraObjetosRegistrados";
+import RegistroExterno from "./pages/GuardiaDeSeguridad/RegistroExterno";
 import MuestraObjetosRegistrados from "./pages/Home/Rol_Guardia_Seguridad/Pages_Guardia/Muestra_Objetos/MuestraObjetosRegistrados";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
@@ -44,6 +49,7 @@ const App = () => {
           <Route path="/" element={<Inicio />} />
           <Route path="/Login" element={<LoginPage />} />
           <Route path="/Register" element={<RegisterPage />} />
+          <Route path="/muestraCardAprendiz" element={<MuestraCardAprendiz />} />
           {/* <Route path="/Roles" element={<Roles />} /> */}
 
           {/* Rutas Roles */}
@@ -54,6 +60,7 @@ const App = () => {
           <Route path="/Perfil" element={<Perfil/>}/>
           <Route path="/HistorialP" element={<HistorialP/>}/>
           <Route path="/objetosregistrados" element={<MuestraObjetosRegistrados />} />
+          <Route path="/registroExterno" element={<RegistroExterno />} />
           <Route path="/historial" element={<Historial />} />
           <Route path="/reportesAdministrador" element={<ReportesAdministrador />} />
           <Route path="/reportesInstructor" element={<ReportesInstructor />} />
