@@ -47,6 +47,15 @@ const Sidebar = () => {
         </div>
         </Link>
         
+      
+        <Link to='/Graficas'>
+        <div className="flex items-center space-x-4">
+          <FaHistory className="text-white" />
+          <span className="text-white">Graficas</span>
+        </div>
+        </Link>
+        
+        
         <Link to='/historial'>
         <div className="flex items-center space-x-4">
           <FaHistory className="text-white" />
@@ -54,6 +63,7 @@ const Sidebar = () => {
         </div>
         </Link>
       </div>
+      
       <div className="mt-auto ">
         <div className="flex items-center justify-center mt-8">
           <div className="bg-white h-1 w-3/4 rounded-full"></div>

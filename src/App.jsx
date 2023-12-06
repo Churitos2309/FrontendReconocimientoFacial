@@ -6,6 +6,7 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Sidebar from "./Components/Sidebar/Sidebar";
 
+import Graficas from "./pages/Reportes"
 // Importación de páginas:
 import Inicio from "./pages/Inicio";
 import LoginPage from "./pages/LoginPage";
@@ -31,6 +32,7 @@ const App = () => {
         {mostrarSidebarHeader() && <Sidebar />}
 
         <Routes>
+          <Route path='/Reportes' element={<Graficas />} />
           <Route path="/" element={<Inicio />} />
           <Route path="/Login" element={<LoginPage />} />
           <Route path="/Register" element={<RegisterPage />} />
