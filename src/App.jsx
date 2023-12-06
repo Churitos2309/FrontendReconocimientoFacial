@@ -26,7 +26,7 @@ const App = () => {
     return !rutasOcultas.includes(window.location.pathname);
   }
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col h-screen overflow-auto">
       {mostrarSidebarHeader() && <Header />}
       <div className="flex min-h-screen">
         {mostrarSidebarHeader() && <Sidebar />}
