@@ -1,0 +1,76 @@
+footer{
+    background-color: black;
+    padding: 1.5% 3% 2% 3%;
+    align-items:center ;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+p{
+    color: white;
+}
+.Logo{
+    width: 15%;
+}
+.arriba{
+    display: flex;
+    gap: 2rem;
+    max-width: 1300px;
+}
+.logos{
+    display: flex; 
+    gap: 2rem;
+}
+.tituls{
+    color: white;
+}
+
+.primer{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0% 0% 0% 0%;
+}
+.second{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0% 0% 0% 9%;
+}
+.three{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0% 0% 0% 13%;
+}
+.abajito{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.abajo{
+    max-width: 1300px;
+}
+/* .options:hover{
+    border-bottom: 1px solid white;
+    outline: 0px;
+} */
+.options:hover{
+    color: cadetblue;
+}
+.optionse{
+    color: white;
+    justify-content: center;
+}
+.optionse:hover{
+    color: cadetblue;
+}
+.ff{
+    display: flex;
+    gap: 2.5rem;
+}

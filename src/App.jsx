@@ -1,8 +1,9 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import Home from "./pages/Home";
 // import Roles from "./pages/Roles";
 
 
@@ -10,14 +11,26 @@ import RolGuardiaSeguridad from "./pages/Home/Rol_Guardia_Seguridad/Rol_Guardia_
 import RolAdministrativo from "./pages/Home/Rol_Administrativo/RolAdministrativo";
 import RolInstructor from "./pages/Home/Rol_Instructor/RolInstructor";
 import RolAprendiz from "./pages/Home/Rol_Aprendiz/RolAprendiz";
+// import Header  from './Components/Header/Header'
+// import Sidebar from './Components/Sidebar/Sidebar'
 
 const App = () => {
+  const navigate = useNavigate();
+
+  const mostrarSidebarHeader = () => {
+    const rutasOcultas = ['/login','/register'];
+    return !rutasOcultas.includes(window.location.pathname);
+  }
   return (
     <div className="flex flex-col h-screen overflow-hidden">
+      {/* {mostrarSidebarHeader () /login&& <Header />}
       <div className="flex min-h-screen">
-        <Routes>
+        {mostrarSidebarHeader () && <Sidebar />}
+      </div> */}
+      <Routes>
           {/* Rutas Principales */}
-          <Route path="/" element={<LoginPage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/Register" element={<RegisterPage />} />
           {/* <Route path="/Roles" element={<Roles />} /> */}
 
@@ -28,7 +41,6 @@ const App = () => {
           <Route path="/Vigilante" element={<RolGuardiaSeguridad />} />
 
         </Routes>
-      </div>
     </div>
   );
 };

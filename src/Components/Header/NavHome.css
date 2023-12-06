@@ -1,0 +1,55 @@
+nav{
+    padding: 1.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 0.5px solid black;
+    outline: 0px;
+    background-color: rgb(237, 234, 234);
+}
+.logo{
+    width: 6%;
+}
+
+.der{
+    display: flex;
+    gap: 1rem;
+}
+.derecha{
+    display: flex;
+    gap: 1rem;
+    width: 35%;
+    padding: 0% 10% 0% 0%;
+}
+
+.izquierda{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    width: 70%;
+    padding: 0% 0% 0% 12%;
+}
+
+.izq{
+    display:flex ;
+    gap: 1rem;
+}
+
+.Boton{
+    padding: 3%;
+    border-radius: 10px;
+    border-style: none;
+    background-color: white;
+    border: solid 1px black;
+}
+
+.Boton:hover{
+    background-color: black;
+    border-style: none;
+    color: white;
+}
+
+.LL:hover{
+    border-bottom: 1px solid black;
+    outline: 0px;
+}
