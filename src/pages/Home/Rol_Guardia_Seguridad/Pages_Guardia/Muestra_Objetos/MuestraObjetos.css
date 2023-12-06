@@ -1,0 +1,18 @@
+.Contenedor_padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0% 0% 0% 19%;
+    /* align-items: center; */
+}
+
+.Almacenador{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+.Titulo{
+    font-size: 350%;
+}

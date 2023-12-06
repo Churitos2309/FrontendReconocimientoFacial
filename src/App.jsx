@@ -1,32 +1,46 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+// Importanción de dependencias:
+import React from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
 
+// Importación de componentes:
+import Header from "./components/Header/Header";
+import Sidebar from "./Components/Sidebar/Sidebar";
 
-import Header from './components/Header/Header';
-import Sidebar from './Components/Sidebar/Sidebar';
-import Home from './pages/Home';
-import RegistroForm from './pages/register';
-import LoginForm from './pages/login';
-import Graficas from "./pages/graficas"
-import MuestraObjetosRegistrados from './pages/MuestraObjetosRegistrados';
+import Graficas from "./pages/Reportes"
+// Importación de páginas:
+import Inicio from "./pages/Inicio";
+import MuestraObjetosRegistrados from "./pages/Home/Rol_Guardia_Seguridad/Pages_Guardia/Muestra_Objetos/MuestraObjetosRegistrados";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import Historial from "./pages/GuardiaDeSeguridad/Historial";
+import ReportesAdministrador from "./pages/Administrador/ReportesAdministrador";
+import ReportesInstructor from "./pages/Instructor/ReportesInstructor";
+import RegistroObjetos from "./pages/Aprendiz/RegistroObjetos";
 
 const App = () => {
+  const navigate = useNavigate();
+
+  const mostrarSidebarHeader = () => {
+    const rutasOcultas = ['/login', '/register'];
+    return !rutasOcultas.includes(window.location.pathname);
+  }
   return (
-    <div className='flex flex-col h-screen overflow-hidden'>
-      <Header />
+    <div className="flex flex-col h-screen overflow-hidden">
+      {mostrarSidebarHeader() && <Header />}
       <div className="flex min-h-screen">
-        <Sidebar />
-        {/* <div className='flex-grow flex flex-col overflow-hidden'>
-          <Home />
-        </div> */}
+        {mostrarSidebarHeader() && <Sidebar />}
+
         <Routes>
-        <Route path='/' element={<Home />} />
-          <Route path='/Login' element={<LoginForm />} />
-          <Route path='/Register' element={<RegistroForm />} />
-          <Route path='/otraopcion' element={<MuestraObjetosRegistrados/>} />
-          <Route path='/Graficas' element={<Graficas />} />
+          <Route path='/Reportes' element={<Graficas />} />
+          <Route path="/" element={<Inicio />} />
+          <Route path="/Login" element={<LoginPage />} />
+          <Route path="/Register" element={<RegisterPage />} />
+          <Route path="/objetosregistrados" element={<MuestraObjetosRegistrados />} />
+          <Route path="/historial" element={<Historial />} />
+          <Route path="/reportesAdministrador" element={<ReportesAdministrador />} />
+          <Route path="/reportesInstructor" element={<ReportesInstructor />} />
+          <Route path="/registroObjetos" element={<RegistroObjetos />} />
         </Routes>
-        
       </div>
     </div>
   );
