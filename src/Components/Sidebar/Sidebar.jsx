@@ -21,7 +21,7 @@ const Sidebar = () => {
         <Link to='/registroObjetos'>
         <div className="flex items-center space-x-4">
           <FaTh className="text-white" />
-          <span className="text-white">Otra opción</span>
+          <span className="text-white">Registrar Objeto</span>
         </div>
         </Link>
 
