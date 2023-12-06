@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const TablaAprendiz = () => {
   return (
     <div className="w-full ">
-      <table className="  sm:ml-3 lg:ml-24 min-[1041px]:ml-32 sm:mt-17 sm:h-10 ml-60  shadow-2xl sm:rounded-lg text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <table className="  sm:ml-3 lg:ml-24 min-[1041px]:ml-32 sm:mt-17  sm:h-10 ml-60  shadow-2xl sm:rounded-lg text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead className="  text-base font-medium bg-sky-200 text-gray-800 bg-gray-200 light:bg-gray-700 light:text-gray-400">
           <tr>
             <th scope="col" className="px-1 mx-5 py-3 inline-block sm:w-1">
@@ -36,7 +36,7 @@ const TablaAprendiz = () => {
             >
               18
             </td>
-            <Link to={"/SelectAprendiz"}>
+            <Link to={"/TablaIndiviAprendiz"}>
               <td
                 scope="row"
                 className=" hover:underline px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
@@ -72,7 +72,7 @@ const TablaAprendiz = () => {
             >
               17
             </td>
-            <Link to={"/SelectAprendiz"}>
+            <Link to={"/TablaIndiviAprendiz"}>
               <td
                 scope="row"
                 className="hover:underline px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
