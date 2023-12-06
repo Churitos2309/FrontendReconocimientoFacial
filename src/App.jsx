@@ -23,11 +23,8 @@ const App = () => {
   }
   return (
     <div className="flex flex-col h-screen overflow-hidden">
-      {/* {mostrarSidebarHeader () /login&& <Header />}
       <div className="flex min-h-screen">
-        {mostrarSidebarHeader () && <Sidebar />}
-      </div> */}
-      <Routes>
+        <Routes>
           {/* Rutas Principales */}
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginPage />} />
@@ -41,6 +38,7 @@ const App = () => {
           <Route path="/Vigilante" element={<RolGuardiaSeguridad />} />
 
         </Routes>
+    </div>
     </div>
   );
 };
