@@ -1,12 +1,19 @@
 import React from "react";
-// import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import Sidebar from "./Components/Sidebar/Sidebar";
 
 const RolGuardiaSeguridad = () => {
   return (
     <div>
         
       <div>
-        <h1>ee</h1>
+        <Routes>
+          <Route path="/Home_Guardia" element={<Home />} />
+          <Route path="/Reconocimiento_Guardia" element={<LoginForm />} />
+          <Route path="/Registro_Guardia" element={<RegistroForm />} />
+          <Route path="/objetosregistrados" element={<MuestraObjetosRegistrados />}
+          />
+        </Routes>
       </div>
     </div>
   );
