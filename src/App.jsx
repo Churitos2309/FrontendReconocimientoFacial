@@ -1,4 +1,4 @@
-// Importación de dependencias:
+// Importanción de dependencias:
 import React from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 

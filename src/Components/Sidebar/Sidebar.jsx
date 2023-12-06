@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHome, FaTh, FaAddressBook, FaHistory, FaUser } from 'react-icons/fa';
+import { FaHome, FaTh, FaAddressBook, FaHistory } from 'react-icons/fa';
 import { FaLaptopFile } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
@@ -18,10 +18,10 @@ const Sidebar = () => {
         </Link>
 
 
-        <Link to='/registroObjetos'>
+        <Link to='/otraopcion'>
         <div className="flex items-center space-x-4">
           <FaTh className="text-white" />
-          <span className="text-white">Registrar Objeto</span>
+          <span className="text-white">Otra opción</span>
         </div>
         </Link>
 
@@ -53,15 +53,6 @@ const Sidebar = () => {
           <span className="text-white">Historial</span>
         </div>
         </Link>
-
-        <Link to='/Perfil'>
-        <div className="flex items-center space-x-4">
-          <FaUser className="text-white" />
-          <span className="text-white">Perfil</span>
-        </div>
-        </Link>
-
-
       </div>
       <div className="mt-auto ">
         <div className="flex items-center justify-center mt-8">

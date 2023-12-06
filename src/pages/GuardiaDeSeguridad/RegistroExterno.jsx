@@ -2,11 +2,11 @@
 
 const RegistroExterno = () => {
     return (
-        <div className="">            
-            <form className="max-w-sm my-16 mx-80 w-96">
+        <div>            
+            <form className="max-w-sm mx-auto">
                 <div className="mb-5">
                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">Nombre completo:</label>
-                    <input type="text" id="nombre" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required/>
+                    <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required/>
                 </div>
                 <div className="mb-5">
                     <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900">Tipo de documento:</label>
@@ -18,11 +18,11 @@ const RegistroExterno = () => {
                 </div>
                 <div className="mb-5">
                     <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900">Número de documento:</label>
-                    <input type="text" id="numeroDocumento" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required/>
+                    <input type="password" id="password" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required/>
                 </div>
                 <div className="mb-5">
                     <label htmlFor="repeat-password" className="block mb-2 text-sm font-medium text-gray-900">Empresa, institución o particular:</label>
-                    <input type="text" id="empresa" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required/>
+                    <input type="password" id="repeat-password" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required/>
                 </div>
                 <div>
                     <form className="max-w-sm mx-auto mb-5">
@@ -31,6 +31,7 @@ const RegistroExterno = () => {
                     </form>
                 </div>
                 <button type="submit" className="text-white bg-gray-800 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-5">Aceptar   </button>
+
             </form>
         </div>
     );
