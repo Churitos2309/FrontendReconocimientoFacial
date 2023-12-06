@@ -10,6 +10,10 @@ import RolGuardiaSeguridad from "./pages/Home/Rol_Guardia_Seguridad/Rol_Guardia_
 import RolAdministrativo from "./pages/Home/Rol_Administrativo/RolAdministrativo";
 import RolInstructor from "./pages/Home/Rol_Instructor/RolInstructor";
 import RolAprendiz from "./pages/Home/Rol_Aprendiz/RolAprendiz";
+import Header from "./Components/Header/Header";
+import Sidebar from "./Components/Sidebar/Sidebar";
+import Perfil from "./Components/Profile/Profile";
+import HistorialP from "./Components/Profile/HistorialP"
 
 const App = () => {
   const navigate = useNavigate();
@@ -35,7 +39,8 @@ const App = () => {
           <Route path="/Instructor" element={<RolInstructor />} />
           <Route path="/Administrativo" element={<RolAdministrativo  />} />
           <Route path="/Vigilante" element={<RolGuardiaSeguridad />} />
-
+          <Route path="/Perfil" element={<Perfil/>}/>
+          <Route path="/HistorialP" element={<HistorialP/>}/>
         </Routes>
       </div>
     </div>
