@@ -7,6 +7,7 @@ import Sidebar from './Components/Sidebar/Sidebar';
 import Home from './pages/Home';
 import RegistroForm from './pages/register';
 import LoginForm from './pages/login';
+import Graficas from "./pages/graficas"
 import MuestraObjetosRegistrados from './pages/MuestraObjetosRegistrados';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           <Route path='/Login' element={<LoginForm />} />
           <Route path='/Register' element={<RegistroForm />} />
           <Route path='/otraopcion' element={<MuestraObjetosRegistrados/>} />
+          <Route path='/Graficas' element={<Graficas />} />
         </Routes>
         
       </div>
