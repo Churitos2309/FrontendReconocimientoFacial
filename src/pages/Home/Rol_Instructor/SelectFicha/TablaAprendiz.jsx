@@ -1,5 +1,6 @@
 import React from "react";
 import "../FichasInstructor/FichasIntructor";
+import { Link } from "react-router-dom";
 const TablaAprendiz = () => {
   return (
     <div className="w-full ">
@@ -12,7 +13,10 @@ const TablaAprendiz = () => {
             <th scope="col" className="px-1 mx-5 py-3 inline-block sm:ml-12">
               Aprendiz
             </th>
-            <th scope="col" className="px-1 ml-32 py-3 inline-block sm:ml-15 sm:mr-0">
+            <th
+              scope="col"
+              className="px-1 ml-32 py-3 inline-block sm:ml-15 sm:mr-0"
+            >
               N°. Documento
             </th>
             <th scope="col" className="px-1 ml-6 py-3 inline-block sm:ml-7">
@@ -32,15 +36,17 @@ const TablaAprendiz = () => {
             >
               18
             </td>
+            <Link to={"/SelectAprendiz"}>
+              <td
+                scope="row"
+                className=" hover:underline px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+              >
+                Jesús Paladinez
+              </td>
+            </Link>
             <td
               scope="row"
-              className=" px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
-            >
-              Jesús Paladinez
-            </td>
-            <td
-              scope="row"
-              className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+              className="px-6  py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
             >
               CC. 1002634856
             </td>
@@ -66,12 +72,14 @@ const TablaAprendiz = () => {
             >
               17
             </td>
-            <td
-              scope="row"
-              className=" px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
-            >
-              Jesús Paladinez
-            </td>
+            <Link to={"/SelectAprendiz"}>
+              <td
+                scope="row"
+                className="hover:underline px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
+              >
+                Jesús Paladinez
+              </td>
+            </Link>
             <td
               scope="row"
               className="px-6 py-4 font-medium text-gray-700 whitespace-nowrap light:text-white text-left"
@@ -555,7 +563,7 @@ const TablaAprendiz = () => {
               6:54 a.m
             </td>
             <td className="px-4 text-center custom-checkbox">
-              <input type="checkbox"/>
+              <input type="checkbox" />
             </td>
           </tr>
         </div>

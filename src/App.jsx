@@ -16,6 +16,7 @@ import ReportesAdministrador from "./pages/Administrador/ReportesAdministrador";
 import ReportesInstructor from "./pages/Instructor/ReportesInstructor";
 import RolInstructor from "./pages/Home/Rol_Instructor/RolInstructor"
 import SelectFicha from "./pages/Home/Rol_Instructor/SelectFicha/SelectFicha";
+import SelectAprendiz from "./pages/Home/Rol_Instructor/SelectAprendiz";
 
 
 
@@ -42,6 +43,8 @@ const App = () => {
           <Route path="/reportesAdministrador" element={<ReportesAdministrador />} />
           <Route path="/reportesInstructor" element={<ReportesInstructor />} />
           <Route path="/SelectFicha" element={<SelectFicha/>} />
+          <Route path="/SelectAprendiz" element={<SelectAprendiz/>} />
+
         </Routes>
       </div>
     </div>
