@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaHome, FaTh, FaAddressBook, FaHistory } from 'react-icons/fa';
+import { FaRegIdCard } from "react-icons/fa";
+
 import { FaLaptopFile } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
@@ -18,14 +20,22 @@ const Sidebar = () => {
         </Link>
 
 
-        <Link to='/otraopcion'>
+        <Link to='/RegistroObjetos'>
         <div className="flex items-center space-x-4">
-          <FaTh className="text-white" />
-          <span className="text-white">Otra opción</span>
+          <FaRegIdCard className="text-white" />
+          <span className="text-white">Registro Objetos</span>
         </div>
         </Link>
 
-        <Link to='registro'>
+        <Link to='/muestraCardAprendiz'>                       {/* CREO LINK PARA COMPONENTE muestraCardAprendiz.jsx  */}
+        <div className="flex items-center space-x-4">
+          <FaTh className="text-white" />
+          <span className="text-white">Carnet Aprendiz</span>
+        </div>
+        </Link>
+
+
+        <Link to='/registroExterno'>
         <div className="flex items-center space-x-4">
           <FaAddressBook className="text-white" />
           <span className="text-white">Registro</span>
