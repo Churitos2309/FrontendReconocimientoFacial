@@ -25,7 +25,7 @@ const Sidebar = () => {
         </div>
         </Link>
 
-        <Link to='/CardAprendiz'>                       {/* CREO LINK PARA COMPONENTE CardAprendiz.jsx  */}
+        <Link to='/muestraCardAprendiz'>                       {/* CREO LINK PARA COMPONENTE muestraCardAprendiz.jsx  */}
         <div className="flex items-center space-x-4">
           <FaTh className="text-white" />
           <span className="text-white">Carnet Aprendiz</span>
@@ -33,7 +33,7 @@ const Sidebar = () => {
         </Link>
 
 
-        <Link to='registro'>
+        <Link to='/registroExterno'>
         <div className="flex items-center space-x-4">
           <FaAddressBook className="text-white" />
           <span className="text-white">Registro</span>
