@@ -55,15 +55,14 @@
   color: rgb(255, 252, 252);
 }
 
-.nameprogram:hover{
-text-shadow: 10px 10px 10px #39a900;
-}
+
 
 .textof {
   
   display: inline-block;
   font-size: 2.5em;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 0%;
 }
 
 .rol_ints {
@@ -87,7 +86,7 @@ text-shadow: 10px 10px 10px #39a900;
 .overf{
   overflow-y: auto;
   overflow-x: hidden;
-  height: 70vh;
+  height: 60vh;
 
 }
 
