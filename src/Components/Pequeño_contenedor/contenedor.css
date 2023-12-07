@@ -1,0 +1,25 @@
+.contenedor {
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    height: 350px; /* Ajusta la altura según tus necesidades */
+    overflow: auto; /* Agrega el scroll cuando el contenido excede las dimensiones */
+    border: 1px solid #ccc; /* Añade un borde para visualización */
+    border-radius: 10px;
+}
+
+.contenido {
+    padding: 3% 2% 2% 2%;
+    padding-top: 250px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Titul{
+    font-size: 200%;
+}
+
+.llll{
+    color: black;
+}

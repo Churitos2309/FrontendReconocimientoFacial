@@ -18,7 +18,7 @@ function LoginPage() {
          <input type="checkbox" name="remember" id="remember" />
          <label className="text-sm font-light " htmlFor="remember"> Recordarme</label>
        </div>
-       <Link to='/'>
+       <Link to='/Home'>
        <button className="w-full px-10 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-500 hover:drop-shadow-md duration-300 ease-in" type="submit">
          Ingresar
        </button>

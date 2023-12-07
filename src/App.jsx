@@ -7,7 +7,7 @@ import Header from "./components/Header/Header";
 import Sidebar from "./Components/Sidebar/Sidebar";
 
 // Importación de páginas:
-import Inicio from "./pages/Inicio";
+import Inicio from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import MuestraCardAprendiz from "./pages/MuestraCardAprendiz";
@@ -16,16 +16,17 @@ import RegistroExterno from "./pages/GuardiaDeSeguridad/RegistroExterno";
 import Historial from "./pages/GuardiaDeSeguridad/Historial";
 import ReportesAdministrador from "./pages/Administrador/ReportesAdministrador";
 import ReportesInstructor from "./pages/Instructor/ReportesInstructor";
+import RegistroObjetos from "./pages/Aprendiz/RegistroObjetos"
 
 const App = () => {
   const navigate = useNavigate();
 
   const mostrarSidebarHeader = () => {
-    const rutasOcultas = ['/login', '/register'];
+    const rutasOcultas = ['/login', '/register', '/'];
     return !rutasOcultas.includes(window.location.pathname);
   }
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col h-screen overflow-auto">
       {mostrarSidebarHeader() && <Header />}
       <div className="flex min-h-screen">
         {mostrarSidebarHeader() && <Sidebar />}
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="/historial" element={<Historial />} />
           <Route path="/reportesAdministrador" element={<ReportesAdministrador />} />
           <Route path="/reportesInstructor" element={<ReportesInstructor />} />
+          <Route path="/RegistroObjetos" element={<RegistroObjetos />} />
         </Routes>
       </div>
     </div>

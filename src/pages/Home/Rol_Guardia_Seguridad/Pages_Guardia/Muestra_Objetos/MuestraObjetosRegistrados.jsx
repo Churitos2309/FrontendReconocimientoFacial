@@ -1,11 +1,11 @@
 import React from "react";
-import "./MuestraObjetos.css"
 import ObjetosMuestra from "../../../../../Components/Card_Objetos_muestra/Objetos_Muestra";
 
 const MuestraObjetosRegistrados = () => {
   return (
-    <div className="Contenedor_padre">
-    <div className="Almacenador">
+    
+    <div className="flex flex-col items-center p-0 19%">
+    <div className="flex flex-col gap-5 justify-center items-center">
       <h1 className="Titulo"><b>Objetos Registrados</b></h1>
 
       <div className="flex flex-col gap-7 items-center border-2 p-6 rounded-md shadow-2xl ">
@@ -25,7 +25,7 @@ const MuestraObjetosRegistrados = () => {
     </div>
     </div>
     
-  );
-};
+    );
+  };
 
 export default MuestraObjetosRegistrados;
