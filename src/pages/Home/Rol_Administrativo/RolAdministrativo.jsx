@@ -4,10 +4,10 @@ const RolAdministrativo = () => {
     return (
         <div>
             <h1>
-                hhh
+                eSTA ES LA PAGINA DE ADMINISTRADOR
             </h1>
         </div>
-    );
+    );   
 }
 
 export default RolAdministrativo;
